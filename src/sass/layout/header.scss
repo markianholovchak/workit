@@ -1,0 +1,21 @@
+.header {
+  padding: 2rem 5rem;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    &--main {
+      font-weight: 700;
+      font-size: 5rem;
+      color: $color-white;
+      span {
+        color: $color-green;
+      }
+    }
+    &--sub {
+      font-family: Karla, sans-serif;
+      color: $color-grey;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+}
