@@ -9,6 +9,16 @@ function Header() {
         </div>
         <div className="header__logo--sub">Best job search platform</div>
       </div>
+      <div className="searchbar">
+        <div className="searchbar__container">
+          <input
+            placeholder="Front-end, Web development..."
+            type="text"
+            className="searchbar__input"
+          />
+        </div>
+        <button className="searchbar__btn">Look up!</button>
+      </div>
     </div>
   );
 }

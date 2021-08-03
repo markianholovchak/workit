@@ -1,6 +1,10 @@
 .header {
   padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
   &__logo {
+    margin-right: 5rem;
+
     display: flex;
     flex-direction: column;
     &--main {
