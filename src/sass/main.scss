@@ -11,5 +11,9 @@
 @import "./base/utilities";
 
 @import "./layout/header";
+@import "./layout/jobOffers";
+@import "./layout/app";
 
-@import "./components//searchbar";
+@import "./components/searchbar";
+@import "./components/jobOffer";
+@import "./components/modal";

@@ -1,0 +1,16 @@
+.jobOffers {
+  width: 80%;
+  padding: 3rem 0;
+  &__offersFound {
+    font-size: 2.3rem;
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    color: $color-grey;
+  }
+  &__offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-gap: 6rem;
+    justify-content: center;
+  }
+}

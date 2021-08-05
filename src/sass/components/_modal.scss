@@ -1,0 +1,113 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($color-background, 0.4);
+  backdrop-filter: blur(0.5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.modal {
+  height: 50rem;
+  width: 90rem;
+  background: $color-dark;
+  padding: 8rem;
+
+  & > * {
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 65rem;
+    width: 70rem;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 60rem;
+    width: 70rem;
+    padding: 4rem;
+  }
+  @media only screen and (max-width: 300px) {
+    height: 65rem;
+    width: 70rem;
+    padding: 4rem;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__offerTitle {
+    color: $color-green;
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+  &__offerType {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-left: 2px solid currentColor;
+    padding: 0 1rem;
+    height: 120%;
+
+    display: flex;
+    align-items: center;
+  }
+  &__offerDetails {
+    color: $color-grey;
+    font-size: 1.8rem;
+    font-family: Karla, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  &__main {
+    font-size: 2rem;
+    font-weight: 400;
+    display: grid;
+    justify-items: left;
+    grid-gap: 2rem;
+    color: $color-white;
+  }
+  &__offerDescription {
+    width: 90%;
+    text-align: justify;
+  }
+  &__offerRequirementsList {
+    list-style: none;
+    color: $color-grey;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem 0;
+
+    display: grid;
+    grid-gap: 1rem;
+  }
+  &__offerSumup {
+    font-size: 1.7rem;
+    font-family: Karla, sans-serif;
+    font-weight: 800;
+  }
+  &__btn {
+    background: $color-green;
+    color: $color-white;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 0.6rem;
+  }
+}
