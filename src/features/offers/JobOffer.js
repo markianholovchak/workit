@@ -15,7 +15,10 @@ function JobOffer({ id, logo, roleName, intro }) {
       </h1>
       <p className="jobOffer__intro">{intro}</p>
       <button className="jobOffer__btn" onClick={handleClick}>
-        Learn More
+        Learn More{" "}
+        <svg className="jobOffer__icon" onClick={handleClick}>
+          <use xlinkHref="./img/sprite.svg#icon-arrow-right"></use>
+        </svg>
       </button>
     </div>
   );

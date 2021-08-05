@@ -41,9 +41,18 @@
     padding: 1rem 2rem;
     cursor: pointer;
     transition: all 0.2s;
+
+    display: flex;
+    align-items: center;
     &:hover {
       background: $color-green;
       color: $color-white;
     }
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1.5rem;
+    fill: currentColor;
   }
 }
