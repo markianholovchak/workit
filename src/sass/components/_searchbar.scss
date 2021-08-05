@@ -15,6 +15,9 @@
     @media only screen and (max-width: 400px) {
       width: 35rem;
     }
+
+    display: flex;
+    align-items: center;
   }
   &__input {
     color: $color-white;
@@ -45,5 +48,11 @@
     &:active {
       transform: scale(0.9);
     }
+  }
+  &__icon {
+    fill: $color-white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 1rem;
   }
 }

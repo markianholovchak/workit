@@ -20,6 +20,7 @@
   width: 90rem;
   background: $color-dark;
   padding: 6rem;
+  position: relative;
 
   & > * {
     margin-bottom: 2rem;
@@ -72,7 +73,12 @@
     font-size: 1.8rem;
     font-family: Karla, sans-serif;
     font-weight: 400;
-    text-align: justify;
+
+    display: flex;
+    align-items: center;
+    svg:last-of-type {
+      margin-left: 0.5rem;
+    }
   }
 
   &__main {
@@ -96,6 +102,13 @@
 
     display: grid;
     grid-gap: 1rem;
+    li {
+      display: flex;
+      align-items: center;
+      &:not(last-child) {
+        margin-bottom: 1rem;
+      }
+    }
   }
   &__offerSumup {
     font-size: 1.7rem;
@@ -108,5 +121,30 @@
     text-decoration: none;
     padding: 1rem 3rem;
     border-radius: 0.6rem;
+  }
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: currentColor;
+    margin-right: 0.5rem;
+  }
+  &__requirementIcon {
+    fill: $color-green;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
+  }
+  &__closeIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-grey;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+      fill: $color-white;
+    }
   }
 }
