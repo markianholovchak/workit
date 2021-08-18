@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/offers/:id">
             <OfferDescription />
           </Route>
-          <Route exact path="/error">
+          <Route exact path="/error-notfound">
             <ErrorMessage />
           </Route>
         </Switch>

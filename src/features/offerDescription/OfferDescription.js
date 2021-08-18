@@ -10,7 +10,7 @@ function OfferDescription() {
   });
 
   if (!offer) {
-    history.push("/error/");
+    history.push("/error-notfound");
   }
   let props = {};
   if (offer) {
