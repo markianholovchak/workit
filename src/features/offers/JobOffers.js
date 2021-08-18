@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 function JobOffers() {
   const filteredOffers = useSelector((state) => state?.filteredOffers ?? []);
-
+  console.log(filteredOffers);
   return (
     <section className="jobOffers">
       <div className="jobOffers__offersFound">
@@ -16,9 +16,9 @@ function JobOffers() {
             <JobOffer
               key={offer.id}
               id={offer.id}
-              logo={offer.logo}
               roleName={offer.roleName}
               intro={offer.requirements.intro}
+              company={offer.company}
             />
           );
         })}

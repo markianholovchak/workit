@@ -1,15 +1,13 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-function JobOffer({ id, logo, roleName, intro }) {
+function JobOffer({ id, roleName, intro, company }) {
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch({ type: "modal/modalOpened", payload: id });
   };
   return (
     <div className="jobOffer">
-      <div className="jobOffer__img">
-        <img src={logo} alt="Company logo" />
-      </div>
+      <div className="jobOffer__company">Posted by: {company}</div>
       <h1 className="jobOffer__title">
         {roleName.length > 25 ? `${roleName.slice(0, 27)}...` : roleName}
       </h1>
