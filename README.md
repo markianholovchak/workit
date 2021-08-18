@@ -6,6 +6,6 @@
 
 ### All the data were taken from google
 
-### Live demo: https://eager-kowalevski-8bccc0.netlify.app/
+### Live demo: https://workit-jobs.netlify.app/
 
 ### Some keywords for search: Web dev, Frontend,Web,Full Stack, United States, developer,
