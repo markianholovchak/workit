@@ -1,3 +1,7 @@
 # WorkIt App - find the job of your dream
 
-## The app was created to learn redux state management library, all the job offers data was taken from google
+## App was created using React, Redux, SASS
+
+### The main goal was to practice learn redux on practice by creating a simple project
+
+### All the data were taken from google
