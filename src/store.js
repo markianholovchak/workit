@@ -2,13 +2,11 @@ import { createStore } from "redux";
 import rootReducer from "./reducer";
 import Offers from "./data.json";
 
-const initialState = {
+const preloadedState = {
   offers: Offers,
   filteredOffers: [],
-  modalOfferId: "",
-  modalOpened: false,
 };
 
-const store = createStore(rootReducer, initialState);
+const store = createStore(rootReducer, preloadedState);
 
 export default store;

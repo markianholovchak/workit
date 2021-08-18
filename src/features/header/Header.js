@@ -25,7 +25,7 @@ function Header() {
       <form className="searchbar" onSubmit={handleSubmit}>
         <div className="searchbar__container">
           <svg className="searchbar__icon">
-            <use xlinkHref="./img/sprite.svg#icon-search"></use>
+            <use xlinkHref="/img/sprite.svg#icon-search"></use>
           </svg>
           <input
             value={search}

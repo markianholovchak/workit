@@ -3,8 +3,6 @@ import Offers from "./data.json";
 const initialState = {
   offers: Offers,
   filteredOffers: [],
-  modalOfferId: "",
-  modalOpened: false,
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -26,19 +24,6 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         filteredOffers: filterOffers,
-      };
-    }
-    case "modal/modalOpened": {
-      return {
-        ...state,
-        modalOfferId: action.payload,
-        modalOpened: true,
-      };
-    }
-    case "modal/modalClosed": {
-      return {
-        ...state,
-        modalOpened: false,
       };
     }
   }
